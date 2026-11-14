@@ -1,0 +1,424 @@
+<title>삼성·영동대로 1호점 사업계획</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column; each of the three deliverables opens with its data basis, then the proposal */
+:root{
+  --bg:#f5f6f4; --surface:#ffffff; --ink:#16201d; --ink-2:#4b5853; --ink-3:#7e8a85; --line:#dde3e0; --line-2:#c7d0cb;
+  --accent:#0b6e5f; --accent-soft:#e1f0ec; --warn:#ad5d0e; --warn-soft:#faeedf; --bad:#b23a35; --bad-soft:#f8e5e3;
+  --coffee:#5a3d2b; --bakery:#c58a2e; --steel:#6d7c86; --oak:#b98b5e; --concrete:#a9aca8;
+  --f-display:"IBM Plex Sans KR","Noto Sans KR",system-ui,sans-serif; --f-body:"Noto Sans KR",system-ui,sans-serif; --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1513; --surface:#171f1c; --ink:#e6ebe8; --ink-2:#b0bbb6; --ink-3:#7d8984; --line:#28322e; --line-2:#3a4540;
+  --accent:#45b8a3; --accent-soft:#17382f; --warn:#e3a35c; --warn-soft:#3a2a17; --bad:#e8807a; --bad-soft:#3d1f1d;
+  --coffee:#c49a7c; --bakery:#e6b25a; --steel:#9aaab4; --oak:#c9a07a; --concrete:#7d817d; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1513; --surface:#171f1c; --ink:#e6ebe8; --ink-2:#b0bbb6; --ink-3:#7d8984; --line:#28322e; --line-2:#3a4540;
+  --accent:#45b8a3; --accent-soft:#17382f; --warn:#e3a35c; --warn-soft:#3a2a17; --bad:#e8807a; --bad-soft:#3d1f1d;
+  --coffee:#c49a7c; --bakery:#e6b25a; --steel:#9aaab4; --oak:#c9a07a; --concrete:#7d817d; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1060px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3,h4{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.3}
+h1{font-size:clamp(28px,4.2vw,42px);font-weight:700;letter-spacing:-.02em}
+h2{font-size:clamp(21px,2.6vw,27px);font-weight:600;letter-spacing:-.01em}
+h3{font-size:18px;font-weight:600} h4{font-size:14px;font-weight:600}
+p{margin:0}
+.num,.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.eyebrow{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+section{padding-block:44px;border-top:1px solid var(--line)}
+.lede{font-size:16.5px;color:var(--ink-2);max-width:70ch}
+.muted{color:var(--ink-2)} .small{font-size:13.5px} .xs{font-size:12px;color:var(--ink-3)}
+header.top{padding-block:46px 26px}
+.stack{display:flex;flex-direction:column;gap:14px}
+.grid{display:grid;gap:14px}
+.g3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))} .g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 20px;min-width:0}
+.kpi .v{font-family:var(--f-display);font-size:28px;font-weight:600;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.kpi .l{font-size:13px;color:var(--ink-2)} .kpi .d{font-size:12.5px;color:var(--ink-3);margin-top:2px}
+.up{color:var(--accent)} .down{color:var(--bad)}
+.pill{display:inline-flex;align-items:center;font-size:12px;font-weight:500;padding:2px 9px;border-radius:999px;white-space:nowrap}
+.pill.ok{background:var(--accent-soft);color:var(--accent)} .pill.mid{background:var(--warn-soft);color:var(--warn)} .pill.no{background:var(--bad-soft);color:var(--bad)}
+.tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:13.5px}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:500;color:var(--ink-3);font-size:12px;white-space:nowrap}
+td.r,th.r{text-align:right;white-space:nowrap} td.nw{white-space:nowrap}
+tr:last-child td{border-bottom:0}
+tr.sum td{font-weight:600;background:color-mix(in srgb,var(--accent) 6%,transparent)}
+tr.sub td{color:var(--ink-2)}
+td.win{background:color-mix(in srgb,var(--accent) 9%,transparent)}
+.chart{width:100%;height:auto;display:block}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:12.5px;color:var(--ink-2)}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-1px;margin-right:6px}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.toc a{font-size:13px;color:var(--ink);text-decoration:none;border:1px solid var(--line-2);border-radius:999px;padding:4px 12px;background:var(--surface)}
+.toc a:hover,.toc a:focus-visible{border-color:var(--accent);color:var(--accent);outline:none}
+.basis{border-left:3px solid var(--accent);padding:10px 14px;background:var(--accent-soft);font-size:13.5px}
+.basis b{font-family:var(--f-mono);font-weight:500}
+.ext{border-left:3px solid var(--warn);padding:10px 14px;background:var(--warn-soft);font-size:13px}
+.persona{display:flex;flex-direction:column;gap:6px}
+.persona .tag{font-family:var(--f-mono);font-size:12px;color:var(--ink-3)}
+.persona ul{margin:4px 0 0;padding-left:18px;font-size:13.5px;color:var(--ink-2)}
+.principle{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:6px 18px;padding:12px 0;border-bottom:1px solid var(--line)}
+.principle:last-child{border-bottom:0}
+.principle .d{font-size:13px;color:var(--ink-2)} .principle .d b{font-family:var(--f-mono);font-weight:500;color:var(--ink)}
+@media (max-width:640px){.principle{grid-template-columns:minmax(0,1fr)}}
+.swatches{display:flex;flex-wrap:wrap;gap:10px}
+.sw{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--ink-2)}
+.sw span{width:28px;height:28px;border-radius:6px;border:1px solid var(--line-2)}
+.sim{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:18px}
+@media (max-width:820px){.sim{grid-template-columns:minmax(0,1fr)}}
+.ctl{display:grid;grid-template-columns:minmax(0,1fr) 92px;gap:2px 12px;align-items:center;margin-bottom:12px}
+.ctl label{font-size:13px;color:var(--ink-2)} .ctl output{font-family:var(--f-mono);font-size:13.5px;text-align:right}
+.ctl input{grid-column:1/-1;width:100%;accent-color:var(--accent)}
+.ctl .hint{grid-column:1/-1;font-size:11.5px;color:var(--ink-3)}
+.big{font-family:var(--f-display);font-size:34px;font-weight:600;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.heat td{text-align:center;font-family:var(--f-mono);font-size:12.5px;white-space:nowrap}
+button.reset{font:inherit;font-size:12.5px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink);border-radius:6px;padding:4px 10px;cursor:pointer}
+button.reset:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+footer{padding-block:30px 56px;border-top:1px solid var(--line);font-size:12.5px;color:var(--ink-3)}
+footer a{color:var(--ink-2)}
+ul{padding-left:18px;margin:8px 0 0} li{margin-bottom:5px}
+a{color:var(--accent)}
+</style>
+
+<div class="wrap">
+<header class="top">
+  <div class="eyebrow">출점 사업계획 · 1호점 · 2026년 11월</div>
+  <h1 style="margin-top:10px">삼성·영동대로 1호점:<br>커피가 이끌고 빵이 따라가는 매장</h1>
+  <p class="lede" style="margin-top:14px">1순위 세 권역 중 <b>삼성·영동대로</b>를 골랐습니다. 이 권역의 평균 점포는 하루 158건을 팔아 서울 평균(60건)의 2.6배입니다. 서울 인건비 수준에서 직영 브랜드 매장이 이익을 낼 수 있는 곳은 세 권역 중 여기뿐이었습니다. 아래에서 선정 근거, 인테리어 컨셉, 메뉴 구성, 손익 시뮬레이션을 차례로 보여 드립니다. 모든 판단에 근거 데이터를 붙였습니다.</p>
+  <nav class="toc" aria-label="목차"><a href="#why">왜 삼성인가</a><a href="#site">입지·고객</a><a href="#interior">1. 인테리어</a><a href="#menu">2. 메뉴</a><a href="#pnl">3. 손익</a><a href="#sim">시뮬레이터</a><a href="#risk">리스크</a><a href="#sources">출처</a></nav>
+</header>
+
+<section id="why">
+  <div class="eyebrow">선정 근거</div>
+  <h2 style="margin-top:6px">세 권역을 같은 잣대로 비교했습니다</h2>
+  <p class="lede" style="margin-top:10px">성장성만 보면 세 권역의 차이가 크지 않습니다. 결정을 가른 것은 점포 하나가 버는 돈이었습니다. 같은 22평 매장을 열고 권역 평균 점포만큼 판다고 가정하면, 삼성만 임대료를 내고도 이익이 남습니다.</p>
+  <div class="tbl-wrap" style="margin-top:18px"><table id="matrix"><thead><tr><th>기준</th><th>근거 데이터</th><th class="r">삼성·영동대로</th><th class="r">영등포·문래</th><th class="r">마곡</th></tr></thead><tbody></tbody></table></div>
+  <p class="xs" style="margin-top:8px">권역 = 중심 상권 반경 1km. 거래·객단가·점포는 커피-음료 업종의 최근 4개 분기 값입니다. 마곡은 커피 매출이 집계되지 않아 제과 값으로 대신했습니다.</p>
+
+  <div class="grid g2" style="margin-top:20px">
+    <div class="card">
+      <h4>권역 평균 점포가 감당할 수 있는 임대료</h4>
+      <p class="xs">같은 22평 매장, 같은 비용 구조, 권역 평균 거래량과 객단가를 가정 · ㎡당 월 임대료</p>
+      <svg id="afford" class="chart" viewBox="0 0 520 230" role="img" aria-label="권역별 감당 가능 임대료 비교"></svg>
+      <p class="small muted">삼성은 ㎡당 월 14.2만 원까지 감당할 수 있습니다. 테헤란로 상권의 1층 기준 시세(7.3만 원)의 두 배 가까이 됩니다. 영등포는 임대료를 0원으로 해도 인건비를 감당하지 못하고, 마곡은 전국 평균 임대료(2.67만 원)보다도 낮은 수준만 감당합니다.</p>
+    </div>
+    <div class="card">
+      <h4>삼성 핵심 5개 상권: 커피는 늘고 빵은 줄었습니다</h4>
+      <p class="xs">삼성역·코엑스·강남MICE·포스코사거리·봉은사역 분기 추정매출 (억 원)</p>
+      <svg id="cfbk" class="chart" viewBox="0 0 520 230" role="img" aria-label="삼성 핵심 상권 커피와 제과 분기 매출 추이"></svg>
+      <div class="legend"><span><i style="background:var(--coffee)"></i>커피-음료</span><span><i style="background:var(--bakery)"></i>제과점</span></div>
+      <p class="small muted" style="margin-top:6px">3년 동안 커피는 <b class="mono">+35%</b>(연 779억→1,055억 원), 제과는 <b class="mono">−33%</b>(265억→177억 원)였습니다. 그래서 이 매장은 <b>커피가 이끌고 빵이 동반 구매로 따라가는 업태</b>로 설계합니다. 대형 베이커리 단독 업태는 맞지 않습니다.</p>
+    </div>
+  </div>
+</section>
+
+<section id="site">
+  <div class="eyebrow">입지와 타깃 고객</div>
+  <h2 style="margin-top:6px">봉은사역~코엑스 북문, 영동대로 변 1층 22평</h2>
+  <div class="grid g3" style="margin-top:18px" id="sitekpi"></div>
+  <p class="small muted" style="margin-top:12px;max-width:76ch">봉은사역 상권은 직장인이 3년 새 1.57만 명에서 2.44만 명으로 55% 늘었는데, 커피 점포는 19곳에서 17곳으로 줄었습니다. 한 블록 남쪽 강남MICE 관광특구(직장인 10.2만 명)는 점포당 연매출이 11.9억 원으로 서울 최고 수준입니다. 두 상권 사이에 매장을 두면 늘어나는 오피스 수요와 코엑스 방문객을 함께 받을 수 있습니다. 2028년 전후로 개통 목표인 영동대로 복합환승센터의 북측 출입 동선과도 가깝습니다.</p>
+
+  <h3 style="margin-top:28px">데이터로 그린 고객 세 그룹</h3>
+  <div class="grid g3" style="margin-top:12px">
+    <div class="card persona"><span class="tag">A · 매출 비중 약 55%</span><h4>테헤란로 오피스 30~40대</h4><ul><li>권역 직장인 중 30~40대 <b class="mono">54~57%</b>, 남성 <b class="mono">61~68%</b></li><li>커피 결제자 남성 비중 <b class="mono">59%</b> (서울 평균 53%)</li><li>아침(06~11시) 결제 건수 <b class="mono">26.7%</b>, 건당 <b class="mono">6,316원</b>. 혼자 한 잔을 빠르게 산다</li></ul></div>
+    <div class="card persona"><span class="tag">B · 매출 비중 약 30%</span><h4>점심 팀 주문 담당자</h4><ul><li>점심(11~14시) 결제 건수 <b class="mono">35.8%</b>, 건당 <b class="mono">10,113원</b>. 서울 평균(8,527원)보다 19% 높다</li><li>아침 건당 금액의 1.6배로, 한 명이 여러 잔을 결제하는 팀 단위 주문</li><li>목요일 매출이 가장 많다(<b class="mono">16.8%</b>)</li></ul></div>
+    <div class="card persona"><span class="tag">C · 매출 비중 약 15%</span><h4>코엑스 전시·미팅 방문객</h4><ul><li>강남MICE 상권은 오후(14~17시) 매출 <b class="mono">29.7%</b>, 주말 <b class="mono">28.8%</b>로 권역 평균보다 높다</li><li>오후 커피 건당 <b class="mono">10,145원</b>: 디저트와 함께 앉아서 먹는 소비</li><li>제과는 퇴근 시간(17~21시) 결제 <b class="mono">30.1%</b>. 집에 사 가는 빵</li></ul></div>
+  </div>
+  <p class="xs" style="margin-top:8px">매출 비중은 권역 시간대·요일 매출 구성을 기준으로 나눈 추정치입니다.</p>
+</section>
+
+<section id="interior">
+  <div class="eyebrow">결과물 1</div>
+  <h2 style="margin-top:6px">인테리어 컨셉: 「플랫폼」</h2>
+  <p class="lede" style="margin-top:10px">역 승강장처럼 <b>빨리 지나가는 사람과 잠시 머무는 사람을 한 공간에서 섞이지 않게</b> 처리하는 매장입니다. 고객의 78%가 평일에 오고, 아침에는 한 잔을 빠르게 사 갑니다. 그래서 동선을 최우선으로 설계하고 좌석은 필요한 만큼만 둡니다. 곧 들어설 광역환승센터와 이야기도 이어집니다.</p>
+
+  <div class="grid g2" style="margin-top:20px;align-items:start">
+    <div class="card">
+      <h4>22평(72.7㎡) 평면 구성</h4>
+      <p class="xs">전면 11m × 깊이 6.6m 가정 · 영동대로 쪽이 아래</p>
+      <svg id="plan" class="chart" viewBox="0 0 520 340" role="img" aria-label="22평 매장 평면 구성도"></svg>
+      <div class="legend" id="planlg"></div>
+    </div>
+    <div class="card">
+      <h4>공간 원칙과 근거 데이터</h4>
+      <div class="principle"><div><b>입구 두 개, 흐름 두 개</b><p class="small muted">주문 동선과 픽업 동선을 나눕니다</p></div><div class="d">아침 결제가 <b>26.7%</b>, 점심이 <b>35.8%</b>로 피크가 두 번입니다. 모바일 주문 고객은 오른쪽 픽업 입구로 들어와 선반에서 바로 가져가고, 줄을 서지 않습니다.</div></div>
+      <div class="principle"><div><b>출발 안내판형 주문 현황판</b><p class="small muted">주문 번호와 준비 상태를 크게 표시</p></div><div class="d">점심 팀 주문(건당 <b>10,113원</b>)은 기다리는 시간이 깁니다. 진행 상황을 보여 주면 체감 대기 시간이 줄고, 매장 안 혼잡도 덜합니다.</div></div>
+      <div class="principle"><div><b>입구 옆 베이커리 진열대</b><p class="small muted">나가는 길에 보이도록</p></div><div class="d">제과 결제의 <b>30.1%</b>가 퇴근 시간에 일어나고 건당 <b>13,613원</b>입니다. 진열대를 출구 쪽에 두어 커피 고객이 빵을 함께 사도록 유도합니다.</div></div>
+      <div class="principle"><div><b>좌석 18석, 대부분 스탠딩·바</b><p class="small muted">창가 바 10석, 미팅 부스 2개(8석)</p></div><div class="d">주말 매출이 <b>21.8%</b>(서울 25.3%)뿐이고 평일 체류 시간이 짧습니다. 대신 코엑스 미팅 수요(오후 건당 <b>10,145원</b>)를 위해 콘센트가 있는 4인 부스를 둡니다.</div></div>
+      <div class="principle"><div><b>남성 오피스 고객에 맞춘 톤</b><p class="small muted">차분한 금속과 오크, 낮은 채도</p></div><div class="d">커피 결제자의 <b>59%</b>, 직장인의 <b>61~68%</b>가 남성입니다. 디저트 카페식 파스텔 톤 대신 업무 공간과 잘 어울리는 재료를 씁니다.</div></div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:14px">
+    <h4>재료와 색</h4>
+    <div class="swatches" style="margin-top:10px">
+      <div class="sw"><span style="background:#a9aca8"></span>노출 콘크리트 바닥·벽 (승강장)</div>
+      <div class="sw"><span style="background:#8b98a1"></span>헤어라인 스테인리스 바·픽업 선반</div>
+      <div class="sw"><span style="background:#b98b5e"></span>화이트오크 카운터 상판·부스</div>
+      <div class="sw"><span style="background:#e9b44c"></span>안내판 앰버 (주문 현황판·사인 포인트)</div>
+      <div class="sw"><span style="background:#2c3236"></span>차콜 천장 (설비 노출, 조명 집중)</div>
+    </div>
+    <p class="small muted" style="margin-top:12px">조명은 바와 진열대에 3000K로 집중하고, 통로는 4000K로 밝게 해 흐름을 유도합니다. 외부 사인은 역 출구 번호 표지처럼 숫자와 화살표 체계로 만들어 영동대로 보행자가 멀리서도 픽업 입구를 알아보게 합니다.</p>
+  </div>
+  <div class="ext" style="margin-top:12px">공사비는 업체 견적 기준(평당 250만~350만 원)의 상단인 350만 원으로 손익에 넣었습니다. 베이크오프 오븐 배기 덕트와 전기 증설은 견적에서 빠지는 경우가 많아 예비비 10%를 따로 잡았습니다.</div>
+</section>
+
+<section id="menu">
+  <div class="eyebrow">결과물 2</div>
+  <h2 style="margin-top:6px">메뉴 포트폴리오: 32개 품목, 시간대마다 맡은 역할</h2>
+  <p class="lede" style="margin-top:10px">시간대별 건당 금액이 메뉴 설계의 출발점입니다. 아침에는 6천 원대로 빨리 사는 한 잔, 점심에는 팀 단위 주문, 오후에는 디저트와 함께하는 미팅, 저녁에는 집에 사 가는 빵을 팝니다. 목표 매출 구성은 음료 70%, 푸드 30%입니다. 권역의 제과 매출 비중(14%)보다 높게 잡았는데, 동반 구매로 객단가를 권역 평균 8,982원에서 9,900원으로 올리는 것이 손익 기준안의 전제이기 때문입니다.</p>
+  <div class="card" style="margin-top:18px">
+    <h4>시간대별 건당 결제 금액: 삼성 권역 vs 서울</h4>
+    <svg id="ticket" class="chart" viewBox="0 0 960 250" role="img" aria-label="시간대별 커피 결제 건당 금액 비교"></svg>
+    <div class="legend"><span><i style="background:var(--coffee)"></i>삼성 권역 커피</span><span><i style="background:var(--concrete)"></i>서울 평균 커피</span><span><i style="background:var(--bakery)"></i>삼성 권역 제과</span></div>
+  </div>
+  <div class="tbl-wrap" style="margin-top:14px"><table id="menutbl"><thead><tr><th>카테고리 (품목 수)</th><th>대표 메뉴 · 가격</th><th class="r">원가율</th><th class="r">매출 비중</th><th>주력 시간대</th><th>근거 데이터</th></tr></thead><tbody></tbody></table></div>
+  <div class="grid g3" style="margin-top:14px">
+    <div class="card"><h4>가격 원칙</h4><p class="small muted">아메리카노는 4,500원입니다. 아침 세트(6,500원)는 아침 건당 금액 6,316원에 맞췄고, 점심 4잔 캐리어(17,000원)는 팀 주문을 겨냥했습니다. 권역 객단가가 서울보다 11% 높아 저가 경쟁이 아니라 품질과 속도로 승부합니다.</p></div>
+    <div class="card"><h4>빵은 '베이크오프'로</h4><p class="small muted">제과 수요가 줄고 있어 매장 제빵사를 두지 않습니다. 본사 센트럴키친에서 냉동 생지를 받아 매장에서 굽습니다. 인건비를 아끼고 재고 손실을 줄이며, 갓 구운 빵 냄새로 입구 동선을 끌어당깁니다.</p></div>
+    <div class="card"><h4>B2B 채널</h4><p class="small muted">회의용 커피·빵 박스와 정기 배송으로 순매출의 4%를 기준안에 넣었습니다. 직장인 10만 명 이상이 걸어서 닿는 거리에 있고, 코엑스 전시 일정에 맞춘 케이터링도 할 수 있습니다.</p></div>
+  </div>
+</section>
+
+<section id="pnl">
+  <div class="eyebrow">결과물 3</div>
+  <h2 style="margin-top:6px">손익 시뮬레이션</h2>
+  <p class="lede" style="margin-top:10px">매출은 하루 거래 건수 × 건당 금액 × 365일로 계산했고, 두 값 모두 서울시 추정매출 데이터에서 가져왔습니다. 기준안은 권역 평균 점포(하루 158건)만큼 파는 경우입니다. 정상 영업 연도의 영업이익률은 5.2%로 얇습니다. 손익분기는 하루 144건이라 권역 평균과 차이가 9%밖에 안 됩니다. 이 매장은 <b>권역 평균 이상을 팔아야만 성립하는 매장</b>이고, 그래서 위의 동선·메뉴 설계가 곧 손익 설계입니다.</p>
+  <div class="grid g3" style="margin-top:18px" id="pnlkpi"></div>
+  <div class="tbl-wrap" style="margin-top:16px"><table id="pnltbl"><thead><tr><th>항목 (연간, 만 원)</th><th class="r">보수</th><th class="r">기준</th><th class="r">낙관</th><th>가정과 근거</th></tr></thead><tbody></tbody></table></div>
+  <p class="xs" style="margin-top:8px">추정매출은 부가세가 포함된 카드 결제액이라 1.1로 나눠 순매출로 바꿨습니다. 4-wall EBITDA는 매장 단위 이익, 영업이익은 여기서 본사 관리비 배부(3%)와 감가상각(5년 정액)을 뺀 값입니다.</p>
+
+  <div class="grid g2" style="margin-top:20px">
+    <div class="card"><h4>3개년 전망</h4><p class="xs">2027년 오픈(기준안의 85%, 오픈 마케팅 4%) → 2028년 기준안 → 2029년 환승센터 개통 후 낙관안</p><svg id="yrs" class="chart" viewBox="0 0 520 240" role="img" aria-label="3개년 매출과 영업이익 전망"></svg></div>
+    <div class="card"><h4>민감도: 영업이익률 (%)</h4><p class="xs">하루 거래 건수 × ㎡당 월 임대료 · 객단가 9,900원 고정</p><div style="overflow-x:auto"><table class="heat" id="heat"></table></div><p class="small muted" style="margin-top:8px">임대료가 30% 올라도 하루 180건이면 8% 이상의 이익률이 나옵니다. 반대로 거래가 130건으로 떨어지면 임대료를 크게 깎아도 적자입니다. <b>임대 협상보다 거래량 확보가 먼저입니다.</b></p></div>
+  </div>
+</section>
+
+<section id="sim">
+  <div class="eyebrow">시뮬레이터</div>
+  <h2 style="margin-top:6px">가정을 바꿔 보세요</h2>
+  <div class="card sim" style="margin-top:16px">
+    <div>
+      <div class="ctl"><label for="s-txn">하루 거래 건수</label><output id="o-txn"></output><input type="range" id="s-txn" min="80" max="260" step="1"><span class="hint">권역 평균 158 · 삼성역 상권 201 · 봉은사역 상권 62</span></div>
+      <div class="ctl"><label for="s-tk">건당 결제 금액 (원)</label><output id="o-tk"></output><input type="range" id="s-tk" min="7000" max="12000" step="100"><span class="hint">권역 커피 8,982 · 삼성역 9,851 · 권역 제과 13,584</span></div>
+      <div class="ctl"><label for="s-rent">㎡당 월 임대료 (원)</label><output id="o-rent"></output><input type="range" id="s-rent" min="30000" max="110000" step="500"><span class="hint">테헤란로 1층 기준 72,900 · 전국 중대형 26,700</span></div>
+      <div class="ctl"><label for="s-hrs">주간 시급 인력 투입 (시간)</label><output id="o-hrs"></output><input type="range" id="s-hrs" min="100" max="220" step="1"><span class="hint">기준 154시간 · 시간당 15,000원(2027 최저임금 10,700원 + 주휴·보험·퇴직)</span></div>
+      <div class="ctl"><label for="s-b2b">B2B 매출 (순매출 대비 %)</label><output id="o-b2b"></output><input type="range" id="s-b2b" min="0" max="10" step="0.5"></div>
+      <button class="reset" id="reset" type="button">기준안으로 되돌리기</button>
+    </div>
+    <div>
+      <div class="xs">연 영업이익</div><div class="big" id="r-op"></div><div class="small muted" id="r-opm"></div>
+      <div class="tbl-wrap" style="margin-top:12px"><table id="simtbl"></table></div>
+      <p class="xs" style="margin-top:8px" id="r-be"></p>
+    </div>
+  </div>
+</section>
+
+<section id="risk">
+  <div class="eyebrow">리스크와 다음 단계</div>
+  <h2 style="margin-top:6px">출점 전에 확인할 것</h2>
+  <div class="grid g2" style="margin-top:16px">
+    <div class="card"><h4>리스크</h4><ul class="small muted">
+      <li><b>거래량 미달</b>: 손익분기 하루 144건. 오픈 1년 차 목표를 134건(기준안의 85%)으로 두고, 6개월 차에 120건을 밑돌면 운영 시간과 인력을 줄입니다.</li>
+      <li><b>임대료</b>: 테헤란로 7.29만 원은 2차 자료가 인용한 상권 평균입니다. 영동대로 변 1층은 이보다 높을 수 있으니 실사로 확인해야 합니다.</li>
+      <li><b>환승센터 공사</b>: 공사 기간에 보행 동선이 바뀔 수 있습니다. 출입구 계획을 확인해 상가 위치를 정해야 합니다.</li>
+      <li><b>제과 수요 감소</b>: 권역 제과 매출이 3년간 33% 줄었습니다. 푸드 비중 30% 목표에 미달하면 객단가 가정(9,900원)이 깨집니다.</li></ul></div>
+    <div class="card"><h4>다음 단계</h4><ul class="small muted">
+      <li>후보 상가 3곳 실사: 임대료, 보증금, 권리금, 전면 폭, 배기·전기 용량</li>
+      <li>봉은사역 출구와 코엑스 북문 앞 보행량 실측: 평일 07~09시, 11~14시</li>
+      <li>자사 기존 매장 POS로 시간대별 건당 금액과 푸드 동반 구매율을 검증</li>
+      <li>B2B 수요 조사: 반경 500m 오피스 빌딩 총무팀 인터뷰 10곳</li></ul></div>
+  </div>
+</section>
+
+<footer id="sources">
+  <b style="color:var(--ink-2)">출처</b><br>
+  서울 열린데이터광장 상권분석서비스 OpenAPI: 추정매출·직장인구·길단위인구·점포·집객시설(상권 단위, 2022년 3분기~2026년 2분기), 2026년 11월 14일 조회<br>
+  한국부동산원 상업용부동산 임대동향(전국 중대형 상가 ㎡당 26,700원, 상가는 1층 기준): <a href="https://biz.sbs.co.kr/amp/article/20000343101">SBS Biz 보도</a><br>
+  테헤란로 상권 중대형 상가 ㎡당 72,900원(부동산원 집계 인용, 2026년 1분기, 2차 자료): <a href="https://www.bizconsensus.today/market?id=3">BizConsensus</a><br>
+  2027년 최저임금 시급 10,700원: <a href="https://kbthink.com/investment/issues/2027-minimum-wage-decision.html">KB Think</a>, <a href="https://v.daum.net/v/20260715085108633">다음 뉴스</a><br>
+  외식업체 경영실태조사(식재료비 비중 40.7%, 영업이익률 8.7%): <a href="https://www.newsis.com/view/NISX20260328_0003567838">뉴시스</a>; 프랜차이즈 음료점 식재료비+인건비 60.2%: <a href="https://supple.kr/news/cmsocfg9a0018xcejqwnvou5j">서플</a><br>
+  인테리어 평당 250만~350만 원(업체 자료, 신뢰도 낮음): <a href="https://blog.hansungshowcase.kr/베이커리-카페-창업-비용-얼마나-들까-2026년-최신-성공-전략과-5가지-핵심-질문-총정리-90695">한성쇼케이스 블로그</a>
+</footer>
+</div>
+
+<script id="data" type="application/json">{"trend":{"bk":[81.9,63.9,63.0,56.5,62.5,59.0,50.6,52.2,57.4,56.7,33.3,29.3],"cf":[206.4,198.9,203.8,170.1,216.4,200.5,189.8,210.9,269.7,271.9,255.0,258.6]},"cmp":{"samseong":{"CS100010":{"amt_eok":1104.9,"cnt":12300782,"ticket":8982,"stores":213,"frc":103,"sps":5.19,"txn_store_day":158.2,"wkend":21.8,"tz":{"00_06":0.1,"06_11":18.8,"11_14":40.3,"14_17":24.7,"17_21":14.9,"21_24":1.3},"tzc":{"06_11":26.7,"11_14":35.8,"14_17":21.9,"17_21":14.5,"21_24":1.0},"tick_tz":{"06_11":6316,"11_14":10113,"14_17":10145,"17_21":9201,"21_24":11566},"tick_wd":8939,"tick_we":9139,"dow":{"MON":13.7,"TUES":15.7,"WED":15.9,"THUR":16.8,"FRI":16.0,"SAT":11.6,"SUN":10.2},"age":{"10":1.3,"20":10.3,"30":23.9,"40":20.7,"50":13.5,"60_ABOVE":5.7},"fml":40.7},"CS100005":{"amt_eok":183.9,"cnt":1354144,"ticket":13584,"stores":55,"frc":18,"sps":3.34,"txn_store_day":67.5,"wkend":27.9,"tz":{"00_06":0.0,"06_11":9.4,"11_14":32.8,"14_17":24.7,"17_21":30.1,"21_24":3.0},"tzc":{"06_11":12.3,"11_14":29.2,"14_17":24.2,"17_21":30.1,"21_24":4.3},"tick_tz":{"06_11":10339,"11_14":15265,"14_17":13908,"17_21":13613,"21_24":9444},"tick_wd":13704,"tick_we":13286,"dow":{"MON":12.5,"TUES":14.0,"WED":14.3,"THUR":15.3,"FRI":16.0,"SAT":14.8,"SUN":13.1},"age":{"10":1.0,"20":11.6,"30":20.9,"40":22.6,"50":16.4,"60_ABOVE":9.0},"fml":46.5}},"yeongdeungpo":{"CS100010":{"amt_eok":311.1,"cnt":4071019,"ticket":7642,"stores":153,"frc":88,"sps":2.03,"txn_store_day":72.9,"wkend":32.4,"tz":{"00_06":1.2,"06_11":14.0,"11_14":31.5,"14_17":24.4,"17_21":23.4,"21_24":5.6},"tzc":{"06_11":22.7,"11_14":31.7,"14_17":22.7,"17_21":18.4,"21_24":3.8},"tick_tz":{"06_11":4703,"11_14":7576,"14_17":8193,"17_21":9719,"21_24":11136},"tick_wd":7170,"tick_we":8859,"dow":{"MON":12.0,"TUES":12.9,"WED":13.7,"THUR":13.6,"FRI":15.5,"SAT":18.3,"SUN":14.1},"age":{"10":0.7,"20":19.2,"30":30.1,"40":18.4,"50":15.6,"60_ABOVE":9.8},"fml":51.5},"CS100005":{"amt_eok":50.1,"cnt":470261,"ticket":10663,"stores":28,"frc":20,"sps":1.79,"txn_store_day":46.0,"wkend":38.1,"tz":{"00_06":0.0,"06_11":7.4,"11_14":30.3,"14_17":30.1,"17_21":27.6,"21_24":4.7},"tzc":{"06_11":7.5,"11_14":26.9,"14_17":29.9,"17_21":30.5,"21_24":5.2},"tick_tz":{"06_11":10466,"11_14":12011,"14_17":10708,"17_21":9638,"21_24":9739},"tick_wd":10635,"tick_we":10708,"dow":{"MON":11.4,"TUES":11.7,"WED":11.7,"THUR":12.4,"FRI":14.7,"SAT":21.2,"SUN":16.9},"age":{"10":0.5,"20":14.9,"30":27.8,"40":21.3,"50":18.0,"60_ABOVE":14.7},"fml":60.1}},"magok":{"CS100010":{"amt_eok":3.0,"cnt":32839,"ticket":9244,"stores":75,"frc":33,"sps":0.04,"txn_store_day":1.2,"wkend":16.8,"tz":{"00_06":0.0,"06_11":7.4,"11_14":61.0,"14_17":19.1,"17_21":12.5,"21_24":0.0},"tzc":{"06_11":10.4,"11_14":57.1,"14_17":20.5,"17_21":12.0,"21_24":0.0},"tick_tz":{"06_11":6609,"11_14":9877,"14_17":8592,"17_21":9633,"21_24":8692},"tick_wd":9212,"tick_we":9405,"dow":{"MON":14.0,"TUES":17.4,"WED":17.3,"THUR":18.7,"FRI":15.9,"SAT":9.4,"SUN":7.3},"age":{"10":0.0,"20":13.5,"30":25.9,"40":20.7,"50":15.3,"60_ABOVE":14.6},"fml":45.8},"CS100005":{"amt_eok":96.5,"cnt":663511,"ticket":14539,"stores":30,"frc":10,"sps":3.22,"txn_store_day":60.6,"wkend":31.6,"tz":{"00_06":0.0,"06_11":9.4,"11_14":32.8,"14_17":27.2,"17_21":28.5,"21_24":2.1},"tzc":{"06_11":9.9,"11_14":28.3,"14_17":28.9,"17_21":30.3,"21_24":2.6},"tick_tz":{"06_11":13711,"11_14":16801,"14_17":13713,"17_21":13684,"21_24":12143},"tick_wd":14934,"tick_we":13753,"dow":{"MON":11.5,"TUES":13.6,"WED":14.0,"THUR":13.4,"FRI":15.9,"SAT":16.9,"SUN":14.8},"age":{"10":0.3,"20":8.4,"30":27.3,"40":25.2,"50":13.5,"60_ABOVE":8.1},"fml":49.4}},"seoul":{"CS100010":{"amt_eok":28010.5,"cnt":347470149,"ticket":8061,"stores":15762,"frc":5347,"sps":1.78,"txn_store_day":60.4,"wkend":25.3,"tz":{"00_06":0.7,"06_11":15.1,"11_14":36.2,"14_17":24.2,"17_21":19.7,"21_24":4.2},"tzc":{"06_11":23.0,"11_14":34.2,"14_17":22.5,"17_21":16.9,"21_24":2.9},"tick_tz":{"06_11":5282,"11_14":8527,"14_17":8664,"17_21":9385,"21_24":11497},"tick_wd":7860,"tick_we":8719,"dow":{"MON":13.5,"TUES":15.0,"WED":15.0,"THUR":15.2,"FRI":16.0,"SAT":14.0,"SUN":11.3},"age":{"10":1.1,"20":18.1,"30":25.2,"40":18.0,"50":14.6,"60_ABOVE":9.1},"fml":47.5},"CS100005":{"amt_eok":8091.9,"cnt":72684610,"ticket":11133,"stores":4013,"frc":1212,"sps":2.02,"txn_store_day":49.6,"wkend":27.2,"tz":{"00_06":0.2,"06_11":16.0,"11_14":26.4,"14_17":24.7,"17_21":27.8,"21_24":4.9},"tzc":{"06_11":18.5,"11_14":23.9,"14_17":23.0,"17_21":28.8,"21_24":5.6},"tick_tz":{"06_11":9618,"11_14":12309,"14_17":11960,"17_21":10768,"21_24":9680},"tick_wd":11009,"tick_we":11479,"dow":{"MON":13.1,"TUES":14.2,"WED":14.9,"THUR":14.5,"FRI":16.1,"SAT":15.2,"SUN":12.0},"age":{"10":0.6,"20":11.9,"30":20.4,"40":20.5,"50":19.0,"60_ABOVE":16.7},"fml":53.8}},"sites":{"3120221":{"nm":"봉은사역","CS100010":{"amt_eok":27.3,"cnt":386443,"ticket":7075,"stores":17,"frc":12,"sps":1.61,"txn_store_day":62.3,"wkend":17.6,"tz":{"00_06":0.0,"06_11":26.9,"11_14":41.6,"14_17":21.0,"17_21":8.7,"21_24":1.7},"tzc":{"06_11":34.5,"11_14":37.7,"14_17":18.5,"17_21":8.6,"21_24":0.7},"tick_tz":{"06_11":5532,"11_14":7805,"14_17":8032,"17_21":7159,"21_24":17499},"tick_wd":6978,"tick_we":7568,"dow":{"MON":13.8,"TUES":14.8,"WED":16.6,"THUR":18.9,"FRI":18.3,"SAT":10.0,"SUN":7.7},"age":{"10":0.2,"20":10.3,"30":27.7,"40":19.4,"50":13.1,"60_ABOVE":8.9},"fml":35.9},"CS100005":null},"3120222":{"nm":"삼성역","CS100010":{"amt_eok":369.1,"cnt":3746672,"ticket":9851,"stores":51,"frc":24,"sps":7.24,"txn_store_day":201.3,"wkend":19.1,"tz":{"00_06":0.0,"06_11":17.8,"11_14":43.3,"14_17":23.5,"17_21":13.7,"21_24":1.7},"tzc":{"06_11":28.4,"11_14":39.5,"14_17":21.3,"17_21":10.4,"21_24":0.5},"tick_tz":{"06_11":6182,"11_14":10799,"14_17":10886,"17_21":12974,"21_24":36686},"tick_wd":9635,"tick_we":10888,"dow":{"MON":13.8,"TUES":16.5,"WED":16.4,"THUR":17.6,"FRI":16.6,"SAT":10.4,"SUN":8.7},"age":{"10":0.3,"20":11.0,"30":28.4,"40":18.5,"50":10.4,"60_ABOVE":5.7},"fml":39.9},"CS100005":{"amt_eok":63.8,"cnt":392693,"ticket":16237,"stores":19,"frc":6,"sps":3.36,"txn_store_day":56.6,"wkend":22.9,"tz":{"00_06":0.0,"06_11":7.8,"11_14":36.9,"14_17":23.2,"17_21":30.3,"21_24":1.8},"tzc":{"06_11":13.9,"11_14":34.9,"14_17":21.6,"17_21":28.0,"21_24":1.7},"tick_tz":{"06_11":9162,"11_14":17175,"14_17":17382,"17_21":17605,"21_24":17748},"tick_wd":15743,"tick_we":18158,"dow":{"MON":13.0,"TUES":15.0,"WED":15.3,"THUR":16.6,"FRI":17.2,"SAT":12.3,"SUN":10.6},"age":{"10":0.7,"20":14.2,"30":25.0,"40":19.4,"50":11.8,"60_ABOVE":6.2},"fml":44.0}},"3001496":{"nm":"강남 마이스 관광특구","CS100010":{"amt_eok":284.7,"cnt":2389045,"ticket":11916,"stores":24,"frc":21,"sps":11.86,"txn_store_day":272.7,"wkend":28.8,"tz":{"00_06":0.0,"06_11":13.8,"11_14":37.4,"14_17":29.7,"17_21":18.2,"21_24":0.9},"tzc":{"06_11":18.0,"11_14":35.2,"14_17":28.1,"17_21":17.9,"21_24":0.8},"tick_tz":{"06_11":9174,"11_14":12669,"14_17":12576,"17_21":12133,"21_24":12288},"tick_wd":11895,"tick_we":11967,"dow":{"MON":11.5,"TUES":13.4,"WED":14.5,"THUR":16.0,"FRI":15.8,"SAT":15.2,"SUN":13.6},"age":{"10":0.5,"20":12.3,"30":27.0,"40":19.1,"50":11.1,"60_ABOVE":6.6},"fml":44.1},"CS100005":{"amt_eok":79.4,"cnt":526348,"ticket":15077,"stores":20,"frc":4,"sps":3.97,"txn_store_day":72.1,"wkend":29.8,"tz":{"00_06":0.0,"06_11":6.6,"11_14":33.8,"14_17":26.9,"17_21":31.1,"21_24":1.6},"tzc":{"06_11":8.2,"11_14":30.6,"14_17":27.9,"17_21":31.3,"21_24":2.0},"tick_tz":{"06_11":12073,"11_14":16678,"14_17":14517,"17_21":14985,"21_24":12173},"tick_wd":15352,"tick_we":14470,"dow":{"MON":11.8,"TUES":13.2,"WED":14.0,"THUR":15.2,"FRI":16.0,"SAT":16.0,"SUN":13.8},"age":{"10":0.6,"20":13.4,"30":23.9,"40":19.8,"50":13.8,"60_ABOVE":7.9},"fml":44.9}},"3120215":{"nm":"포스코사거리","CS100010":{"amt_eok":300.8,"cnt":3119928,"ticket":9640,"stores":74,"frc":34,"sps":4.06,"txn_store_day":115.5,"wkend":14.8,"tz":{"00_06":0.0,"06_11":24.5,"11_14":44.1,"14_17":22.4,"17_21":8.4,"21_24":0.5},"tzc":{"06_11":33.2,"11_14":40.9,"14_17":18.8,"17_21":6.7,"21_24":0.4},"tick_tz":{"06_11":7117,"11_14":10382,"14_17":11518,"17_21":12216,"21_24":12320},"tick_wd":9278,"tick_we":12424,"dow":{"MON":15.6,"TUES":17.7,"WED":17.6,"THUR":17.9,"FRI":16.3,"SAT":7.8,"SUN":7.0},"age":{"10":0.2,"20":8.0,"30":21.5,"40":18.3,"50":12.5,"60_ABOVE":5.3},"fml":31.8},"CS100005":{"amt_eok":1.1,"cnt":17255,"ticket":6155,"stores":2,"frc":3,"sps":0.53,"txn_store_day":23.6,"wkend":31.2,"tz":{"00_06":0.1,"06_11":14.6,"11_14":16.8,"14_17":21.4,"17_21":41.3,"21_24":5.8},"tzc":{"06_11":18.2,"11_14":17.2,"14_17":19.2,"17_21":39.9,"21_24":5.4},"tick_tz":{"06_11":4935,"11_14":5991,"14_17":6864,"17_21":6368,"21_24":6640},"tick_wd":5700,"tick_we":7469,"dow":{"MON":11.9,"TUES":15.3,"WED":13.6,"THUR":14.2,"FRI":13.7,"SAT":16.3,"SUN":14.9},"age":{"10":0.8,"20":10.8,"30":18.7,"40":22.5,"50":24.0,"60_ABOVE":22.3},"fml":34.2}},"3120218":{"nm":"코엑스","CS100010":{"amt_eok":73.4,"cnt":536360,"ticket":13679,"stores":14,"frc":8,"sps":5.24,"txn_store_day":105.0,"wkend":30.1,"tz":{"00_06":0.0,"06_11":10.3,"11_14":35.9,"14_17":28.3,"17_21":23.7,"21_24":1.8},"tzc":{"06_11":11.0,"11_14":34.5,"14_17":28.7,"17_21":24.0,"21_24":1.8},"tick_tz":{"06_11":12784,"11_14":14258,"14_17":13477,"17_21":13537,"21_24":13205},"tick_wd":13856,"tick_we":13286,"dow":{"MON":10.3,"TUES":12.0,"WED":14.5,"THUR":16.7,"FRI":16.3,"SAT":16.2,"SUN":13.9},"age":{"10":0.9,"20":13.3,"30":25.3,"40":19.8,"50":11.7,"60_ABOVE":6.0},"fml":42.4},"CS100005":{"amt_eok":32.5,"cnt":291964,"ticket":11133,"stores":6,"frc":2,"sps":5.42,"txn_store_day":133.3,"wkend":32.7,"tz":{"00_06":0.0,"06_11":13.9,"11_14":32.5,"14_17":28.6,"17_21":23.9,"21_24":1.2},"tzc":{"06_11":13.7,"11_14":29.3,"14_17":28.8,"17_21":26.2,"21_24":1.9},"tick_tz":{"06_11":11268,"11_14":12333,"14_17":11054,"17_21":10130,"21_24":6739},"tick_wd":11265,"tick_we":10870,"dow":{"MON":11.7,"TUES":12.6,"WED":13.9,"THUR":14.4,"FRI":14.8,"SAT":17.3,"SUN":15.4},"age":{"10":0.4,"20":9.2,"30":20.9,"40":20.1,"50":16.6,"60_ABOVE":10.6},"fml":43.0}}}},"pnl":{"R":{"보수":{"gross":361350000,"net":328500000.0,"b2b":0.0,"cogs":92637000.00000001,"pack":11497500.000000002,"labor":159200000,"rent":63622104.480000004,"mgmt":10472774.399999999,"card":4697550.0,"util":9198000.0,"mkt":9855000.0,"other":6570000.0,"ebitda":-39249928.88,"hq":9855000.0,"dep":36300000.0,"op":-85404928.88},"기준":{"gross":570933000,"net":539791199.9999999,"b2b":20761199.999999996,"cogs":152221118.39999998,"pack":18892691.999999996,"labor":170120000,"rent":63622104.480000004,"mgmt":10472774.399999999,"card":7422129.0,"util":15114153.599999998,"mkt":10795823.999999998,"other":10795823.999999998,"ebitda":80334580.11999989,"hq":16193735.999999996,"dep":36300000.0,"op":27840844.119999886},"낙관":{"gross":755659500,"net":721311340.9090909,"b2b":34348159.090909086,"cogs":203409798.13636366,"pack":25245896.931818184,"labor":194300000,"rent":63622104.480000004,"mgmt":10472774.399999999,"card":9823573.5,"util":20196717.545454547,"mkt":14426226.818181818,"other":14426226.818181818,"ebitda":165388022.27909088,"hq":21639340.227272727,"dep":36300000.0,"op":107448682.05181816}},"SC":{"보수":{"txn":110,"ticket":9000,"b2b":0.0,"hourly_h":140,"mkt":0.03},"기준":{"txn":158,"ticket":9900,"b2b":0.04,"hourly_h":154,"mkt":0.02},"낙관":{"txn":201,"ticket":10300,"b2b":0.05,"hourly_h":185,"mkt":0.02}},"yrs":{"2027":{"gross":485293049.99999994,"net":458822519.9999999,"b2b":17647019.999999996,"cogs":129387950.63999999,"pack":16058788.199999997,"labor":170120000,"rent":63622104.480000004,"mgmt":10472774.399999999,"card":6308809.6499999985,"util":12847030.559999997,"mkt":18352900.799999997,"other":9176450.399999999,"ebitda":22475710.869999923,"hq":13764675.599999996,"dep":36300000.0,"op":-27588964.73000007},"2028":{"gross":570933000,"net":539791199.9999999,"b2b":20761199.999999996,"cogs":152221118.39999998,"pack":18892691.999999996,"labor":170120000,"rent":63622104.480000004,"mgmt":10472774.399999999,"card":7422129.0,"util":15114153.599999998,"mkt":10795823.999999998,"other":10795823.999999998,"ebitda":80334580.11999989,"hq":16193735.999999996,"dep":36300000.0,"op":27840844.119999886},"2029":{"gross":755659500,"net":721311340.9090909,"b2b":34348159.090909086,"cogs":203409798.13636366,"pack":25245896.931818184,"labor":194300000,"rent":63622104.480000004,"mgmt":10472774.399999999,"card":9823573.5,"util":20196717.545454547,"mkt":14426226.818181818,"other":14426226.818181818,"ebitda":165388022.27909088,"hq":21639340.227272727,"dep":36300000.0,"op":107448682.05181816}},"be_op":143.73448441895792,"be_eb":118.89081861954364,"capex":{"interior":77000000,"equip":65000000,"sign_furn":23000000,"contingency":16500000},"capex_t":181500000,"deposit":53018420.4,"grid":[[-13.4,-15.7,-17.5,-20.3,-22.7],[-2.5,-4.5,-6.0,-8.4,-10.4],[8.1,6.4,5.2,3.2,1.6],[14.0,12.6,11.5,9.8,8.4],[18.6,17.3,16.3,14.7,13.5]],"assump":{"AREA_PY":22,"M2":72.7276,"RENT_M2":72900,"MGMT_M2":12000,"HOURLY":15000,"MGR":50000000,"MIX_BEV":0.7,"COGS_BEV":0.24,"COGS_FOOD":0.38}}}</script>
+<script>
+const D=JSON.parse(document.getElementById('data').textContent);
+const css=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const NS='http://www.w3.org/2000/svg';
+const mk=(t,a,p)=>{const e=document.createElementNS(NS,t);for(const k in a)if(a[k]!=null)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e};
+const txt=(p,x,y,s,o={})=>{const t=mk('text',Object.assign({x,y,'font-size':12,fill:css('--ink-2'),'font-family':'IBM Plex Sans KR, sans-serif'},o),p);t.textContent=s;return t};
+const man=v=>Math.round(v/1e4).toLocaleString('ko-KR');
+const eok=v=>(v/1e8).toFixed(2)+'억';
+const C=D.cmp,P=D.pnl,A=P.assump;
+
+/* decision matrix */
+(function(){
+ const s=C.samseong.CS100010,y=C.yeongdeungpo.CS100010,m=C.magok.CS100005;
+ const rows=[
+  ['3년 성장 점수','1,105개 권역 종합 순위','1위 (90.9)','8위 (85.5)','14위 (83.7)',0],
+  ['수요 밀도','점포당 하루 거래 건수',s.txn_store_day+'건',y.txn_store_day+'건',m.txn_store_day+'건 (제과)',0],
+  ['객단가','건당 결제 금액',s.ticket.toLocaleString()+'원',y.ticket.toLocaleString()+'원',m.ticket.toLocaleString()+'원 (제과)',0],
+  ['점포 생산성','점포당 연 추정매출',s.sps+'억',y.sps+'억',m.sps+'억 (제과)',0],
+  ['선행 수요','직장인구 연평균 증가율','+12.8%','+4.3%','+18.3%',2],
+  ['경쟁 압력','3년간 점포 증감','+1.5%','+9.0%','−2.8%',2],
+  ['데이터 신뢰도','왜곡 없는 상권의 매출 비중','76%','91%','3% (커피 미집계)',1],
+  ['임대료 감당력','평균 점포 기준 ㎡당 월 한도','14.2만 원','0원 (임대료 전 적자)','1.9만 원',0],
+  ['3년 내 촉매','공개 계획 기준 (데이터 외)','GTX-A·복합환승센터 2028년 목표','신안산선 (지연 중)','기업 입주 지속',0]];
+ document.querySelector('#matrix tbody').innerHTML=rows.map(r=>`<tr><td class="nw"><b>${r[0]}</b></td><td class="muted small">${r[1]}</td>${[2,3,4].map(i=>`<td class="r ${i-2===r[5]?'win':''}">${r[i]}</td>`).join('')}</tr>`).join('')+
+ `<tr class="sum"><td>판정</td><td></td><td class="r"><span class="pill ok">선정</span></td><td class="r"><span class="pill mid">소형·저비용 업태로만 가능</span></td><td class="r"><span class="pill mid">데이터 보강 후 재검토</span></td></tr>`;
+})();
+
+/* afford chart */
+function drawAfford(){
+ const svg=document.getElementById('afford');svg.innerHTML='';
+ const L=130,R=20,W=520,top=22,bh=34,gap=22,max=160000;const x=v=>L+v/max*(W-L-R);
+ const data=[['삼성·영동대로',142111,'--accent'],['마곡 (제과 기준)',18810,'--warn'],['영등포·문래',0,'--bad']];
+ [[26700,'전국 중대형 평균 2.67만'],[72900,'테헤란로 1층 7.29만']].forEach(([v,l],i)=>{mk('line',{x1:x(v),x2:x(v),y1:top-8,y2:top+3*(bh+gap)-gap+6,stroke:css('--ink-3'),'stroke-dasharray':'4 3'},svg);txt(svg,x(v)+4,top+3*(bh+gap)-gap+20+i*14,l,{'font-size':11,fill:css('--ink-3')})});
+ data.forEach((d,i)=>{const y=top+i*(bh+gap);txt(svg,L-10,y+bh/2+4,d[0],{'text-anchor':'end','font-size':12.5,fill:css('--ink')});
+  mk('rect',{x:L,y,width:Math.max(2,x(d[1])-L),height:bh,rx:4,fill:css(d[2])},svg);
+  txt(svg,x(d[1])+6,y+bh/2+4,d[1]?(d[1]/1e4).toFixed(1)+'만 원':'0원',{'font-family':'IBM Plex Mono, monospace','font-size':12,fill:css('--ink')})});
+}
+/* coffee vs bakery */
+function drawCfbk(){
+ const svg=document.getElementById('cfbk');svg.innerHTML='';const W=520,H=230,L=40,R=16,T=14,B=30;
+ const pos=[0,1,2,3,8,9,10,11,12,13,14,15];const lab={0:'22.3Q',3:'23.2Q',8:'24.3Q',11:'25.2Q',15:'26.2Q'};
+ const x=i=>L+i*(W-L-R)/15,max=300,y=v=>T+(1-v/max)*(H-T-B);
+ [0,100,200,300].forEach(v=>{mk('line',{x1:L,x2:W-R,y1:y(v),y2:y(v),stroke:css('--line')},svg);txt(svg,L-6,y(v)+4,v,{'text-anchor':'end','font-size':10.5,fill:css('--ink-3'),'font-family':'IBM Plex Mono, monospace'})});
+ Object.entries(lab).forEach(([i,l])=>txt(svg,x(+i),H-10,l,{'text-anchor':'middle','font-size':10.5,fill:css('--ink-3'),'font-family':'IBM Plex Mono, monospace'}));
+ mk('rect',{x:x(3)+5,y:T,width:x(8)-x(3)-10,height:H-T-B,fill:css('--line'),opacity:.4},svg);
+ [['cf','--coffee'],['bk','--bakery']].forEach(([k,c])=>{const v=D.trend[k];const col=css(c);
+  [[0,4],[4,12]].forEach(([a,b])=>mk('polyline',{points:v.slice(a,b).map((d,i)=>x(pos[a+i])+','+y(d)).join(' '),fill:'none',stroke:col,'stroke-width':2.4,'stroke-linejoin':'round','stroke-linecap':'round'},svg));
+  mk('line',{x1:x(3),y1:y(v[3]),x2:x(8),y2:y(v[4]),stroke:col,'stroke-dasharray':'2 4'},svg);
+  mk('circle',{cx:x(15),cy:y(v[11]),r:4,fill:col,stroke:css('--surface'),'stroke-width':2},svg);
+  txt(svg,x(15)-6,y(v[11])-9,v[11]+'억',{'text-anchor':'end','font-size':11,fill:col,'font-family':'IBM Plex Mono, monospace','font-weight':500})});
+}
+/* site KPIs */
+(function(){
+ const b=C.sites['3120221'],mi=C.sites['3001496'];
+ const k=[['직장인구 (봉은사역 상권)','24,393명','3년 전 15,697명 · +55%'],['커피 점포 (봉은사역 상권)','17곳','3년 전 19곳 · 수요는 늘고 공급은 줄었다'],['점포당 연매출 (강남MICE)',mi.CS100010.sps+'억','서울 커피 평균 '+C.seoul.CS100010.sps+'억의 6.7배'],['일평균 유동인구 (봉은사역)','5,708명','아침 06~11시 22.3%'],['직장인 연령 (봉은사역)','30~40대 57%','남성 67.5%'],['평일 매출 비중 (권역 커피)',(100-C.samseong.CS100010.wkend).toFixed(1)+'%','서울 평균 '+(100-C.seoul.CS100010.wkend).toFixed(1)+'%']];
+ document.getElementById('sitekpi').innerHTML=k.map(x=>`<div class="card kpi"><div class="l">${x[0]}</div><div class="v">${x[1]}</div><div class="d">${x[2]}</div></div>`).join('');
+})();
+/* floor plan */
+function drawPlan(){
+ const svg=document.getElementById('plan');svg.innerHTML='';const s=44,ox=18,oy=16,W=11*s,Hh=6.6*s;
+ const Z=[
+  {n:'바·제조',x:3.2,y:0,w:4.6,h:2.2,c:'--coffee',t:'에스프레소 2대·제빙'},
+  {n:'베이크오프·창고',x:7.8,y:0,w:3.2,h:2.2,c:'--steel',t:'오븐 2대'},
+  {n:'미팅 부스',x:0,y:0,w:3.2,h:3.0,c:'--oak',t:'4인 × 2'},
+  {n:'주문 카운터',x:3.2,y:2.2,w:3.0,h:1.4,c:'--coffee',t:'POS 2 · 키오스크 1'},
+  {n:'픽업 선반',x:7.8,y:2.2,w:3.2,h:1.4,c:'--accent',t:'모바일 주문 전용'},
+  {n:'베이커리 진열',x:6.2,y:2.2,w:1.6,h:1.4,c:'--bakery',t:''},
+  {n:'대기·현황판',x:3.2,y:3.6,w:4.6,h:1.6,c:'--concrete',t:'출발 안내판형 현황판'},
+  {n:'창가 바 10석',x:0,y:5.2,w:5.5,h:1.4,c:'--oak',t:''},
+  {n:'픽업 동선',x:7.8,y:3.6,w:3.2,h:3.0,c:'--line-2',t:''}];
+ mk('rect',{x:ox,y:oy,width:W,height:Hh,fill:'none',stroke:css('--ink'),'stroke-width':2},svg);
+ Z.forEach(z=>{const col=css(z.c);mk('rect',{x:ox+z.x*s+2,y:oy+z.y*s+2,width:z.w*s-4,height:z.h*s-4,rx:4,fill:col,'fill-opacity':z.c==='--line-2'?.6:.22,stroke:col,'stroke-width':1.2},svg);
+  txt(svg,ox+(z.x+z.w/2)*s,oy+(z.y+z.h/2)*s+(z.t?-2:4),z.n,{'text-anchor':'middle','font-size':12,'font-weight':600,fill:css('--ink')});
+  if(z.t)txt(svg,ox+(z.x+z.w/2)*s,oy+(z.y+z.h/2)*s+14,z.t,{'text-anchor':'middle','font-size':10.5,fill:css('--ink-2')})});
+ const doorY=oy+Hh;[[5.0,'주문 입구'],[9.4,'픽업 입구']].forEach(([dx,l])=>{mk('rect',{x:ox+dx*s-30,y:doorY-3,width:60,height:6,fill:css('--accent')},svg);txt(svg,ox+dx*s,doorY+20,l,{'text-anchor':'middle','font-size':11.5,fill:css('--accent'),'font-weight':600})});
+ const ar=css('--accent');mk('path',{d:`M ${ox+5*s} ${doorY-8} L ${ox+5*s} ${oy+3.9*s} L ${ox+4.6*s} ${oy+3.9*s}`,fill:'none',stroke:ar,'stroke-width':1.6,'stroke-dasharray':'5 4'},svg);
+ mk('path',{d:`M ${ox+9.4*s} ${doorY-8} L ${ox+9.4*s} ${oy+3.7*s}`,fill:'none',stroke:ar,'stroke-width':1.6,'stroke-dasharray':'5 4'},svg);
+ txt(svg,ox+W/2,doorY+38,'영동대로 (전면 11m)',{'text-anchor':'middle','font-size':11,fill:css('--ink-3'),'font-family':'IBM Plex Mono, monospace'});
+ document.getElementById('planlg').innerHTML='<span>면적 배분(약): 고객 동선·픽업 44% · 좌석 24% · 제조·창고 24% · 주문·진열 9%</span>';
+}
+/* ticket chart */
+function drawTicket(){
+ const svg=document.getElementById('ticket');svg.innerHTML='';const W=960,H=250,L=60,R=20,T=16,B=40;
+ const tz=['06_11','11_14','14_17','17_21','21_24'],lb=['아침 06~11','점심 11~14','오후 14~17','저녁 17~21','심야 21~24'];
+ const ser=[[C.samseong.CS100010.tick_tz,'--coffee'],[C.seoul.CS100010.tick_tz,'--concrete'],[C.samseong.CS100005.tick_tz,'--bakery']];
+ const max=16000,gw=(W-L-R)/5,bw=Math.min(40,gw/4.6),y=v=>T+(1-v/max)*(H-T-B);
+ [0,4000,8000,12000,16000].forEach(v=>{mk('line',{x1:L,x2:W-R,y1:y(v),y2:y(v),stroke:css('--line')},svg);txt(svg,L-8,y(v)+4,v.toLocaleString(),{'text-anchor':'end','font-size':10.5,fill:css('--ink-3'),'font-family':'IBM Plex Mono, monospace'})});
+ tz.forEach((t,i)=>{const cx=L+gw*i+gw/2;txt(svg,cx,H-14,lb[i],{'text-anchor':'middle','font-size':12,fill:css('--ink-2')});
+  ser.forEach((s,k)=>{const v=s[0][t];const x=cx+(k-1)*(bw+4)-bw/2;mk('rect',{x,y:y(v),width:bw,height:y(0)-y(v),rx:3,fill:css(s[1])},svg);
+   txt(svg,x+bw/2,y(v)-5,(v/1000).toFixed(1)+'k',{'text-anchor':'middle','font-size':10.5,fill:css('--ink-2'),'font-family':'IBM Plex Mono, monospace'})})});
+}
+/* menu table */
+(function(){
+ const s=C.samseong;
+ const R=[
+  ['에스프레소 음료 (10)','아메리카노 4,500 · 라떼 5,300 · 콜드브루 5,000 · 시그니처 라떼 6,300','23%','46%','종일 · 아침 단품','커피 결제의 26.7%가 아침, 건당 6,316원. 단품 회전이 핵심'],
+  ['논커피·티 (5)','말차 라떼 5,800 · 제철 에이드 6,000 · 디카페인 전 메뉴 +500','26%','12%','오후','오후 커피 건당 10,145원. 미팅 동반자용 대체 음료'],
+  ['아침 세트 (2)','아메리카노 + 버터롤 또는 에그 미니 6,500','30%','6%','07~10시','아침 건당 6,316원에 가격을 맞춤. 남성 59%, 빠른 결제'],
+  ['팀 오더 번들 (3)','4잔 캐리어 17,000 · 8잔 32,000 · 회의 박스(음료+미니빵) 인당 7,500','27%','6%','11~14시 · 화~목','점심 건당 10,113원, 서울보다 19% 높다. 목요일 매출 최고'],
+  ['페이스트리·디저트 (8)','크루아상 4,200 · 소금빵 3,500 · 까눌레 3,800 · 휘낭시에 3,000','34%','12%','오후 · 동반 구매','제과 결제 중 오후 24.2%. 커피 동반 구매로 객단가를 올림'],
+  ['세이버리·샌드위치 (5)','잠봉뵈르 8,900 · 에그 샌드위치 7,500 · 치아바타 9,500','42%','10%','11~14시','남성 오피스 고객 점심 대용. 제과 점심 건당 15,265원'],
+  ['테이크홈 식사빵 (4)','캄파뉴 7,500 · 식빵 6,500 · 3종 박스 13,500','35%','8%','17~20시 · 금요일','제과 결제의 30.1%가 퇴근 시간, 건당 13,613원. 금요일 16.0%']];
+ document.querySelector('#menutbl tbody').innerHTML=R.map(r=>`<tr><td class="nw"><b>${r[0]}</b></td><td class="small">${r[1]}</td><td class="r num">${r[2]}</td><td class="r num">${r[3]}</td><td class="small nw">${r[4]}</td><td class="small muted">${r[5]}</td></tr>`).join('')+
+ `<tr class="sum"><td>합계 32개</td><td class="small">음료 70% · 푸드 30%</td><td class="r num">28.2%</td><td class="r num">100%</td><td></td><td class="small">포장재는 별도 3.5%</td></tr>`;
+})();
+
+/* P&L */
+function calc(o){
+ const VAT=1.1,M2=A.M2;const gross=o.txn*o.tk*365,ns=gross/VAT,b2b=ns*o.b2b,net=ns+b2b;
+ const cogs=net*(A.MIX_BEV*A.COGS_BEV+(1-A.MIX_BEV)*A.COGS_FOOD),pack=net*.035,labor=A.MGR+o.hrs*52*A.HOURLY,rent=o.rent*M2*12,mgmt=A.MGMT_M2*M2*12,card=gross*.013,util=net*.028,mkt=net*(o.mkt??.02),other=net*.02;
+ const ebitda=net-cogs-pack-labor-rent-mgmt-card-util-mkt-other,hq=net*.03,dep=P.capex_t/5,op=ebitda-hq-dep;
+ return {gross,net,b2b,cogs,pack,labor,rent,mgmt,card,util,mkt,other,ebitda,hq,dep,op};
+}
+(function(){
+ const R=P.R,sc=['보수','기준','낙관'];
+ const k=[['정상 영업 연 순매출 (기준)',eok(R['기준'].net),'하루 158건 × 9,900원 + B2B 4%'],['영업이익 (기준)',eok(R['기준'].op),'이익률 '+(R['기준'].op/R['기준'].net*100).toFixed(1)+'% · 4-wall '+(R['기준'].ebitda/R['기준'].net*100).toFixed(1)+'%'],['손익분기 거래량','하루 '+Math.round(P.be_op)+'건','권역 평균 158건의 '+Math.round(P.be_op/158*100)+'%'],['초기 투자','1.82억','공사 7,700만 · 설비 6,500만 · 사인·가구 2,300만 · 예비비'],['보증금 (별도)',eok(P.deposit),'월 임대료 10개월분 가정'],['투자 회수 (기준)',(P.capex_t/R['기준'].ebitda).toFixed(1)+'년','4-wall EBITDA 기준, 보증금 제외']];
+ document.getElementById('pnlkpi').innerHTML=k.map(x=>`<div class="card kpi"><div class="l">${x[0]}</div><div class="v">${x[1]}</div><div class="d">${x[2]}</div></div>`).join('');
+ const S=P.SC;
+ const L=[
+  ['하루 거래 건수',r=>null,s=>S[s].txn+'건','보수: 봉은사역(62)과 권역 평균의 중간 · 기준: 권역 커피 점포 평균 158 · 낙관: 삼성역 상권 평균 201','sub'],
+  ['건당 결제 금액',r=>null,s=>S[s].tk?S[s].tk:S[s].ticket.toLocaleString()+'원','권역 커피 8,982원 + 푸드 동반 구매 · 낙관은 삼성역 커피 9,851원 + 동반 구매','sub'],
+  ['순매출 (B2B 포함)','net',null,'카드 추정매출 ÷ 1.1(부가세) · B2B는 기준 4%, 낙관 5%','sum'],
+  ['식자재 원가','cogs',null,'음료 24% · 푸드 38% · 구성비 70:30 → 28.2% (외식업 평균 식재료비 40.7%보다 낮은 커피 중심 구조)'],
+  ['포장재','pack',null,'테이크아웃 중심이라 순매출의 3.5%'],
+  ['인건비','labor',null,'점장 연 5,000만 원 + 시급 인력 주 140/154/185시간 × 15,000원'],
+  ['임차료','rent',null,'72.7㎡ × ㎡당 72,900원(테헤란로 1층 기준) × 12'],
+  ['관리비','mgmt',null,'㎡당 12,000원 가정'],
+  ['결제 수수료','card',null,'카드 결제액의 1.3% 가정'],
+  ['수도광열비','util',null,'순매출의 2.8%'],
+  ['마케팅','mkt',null,'보수 3% · 기준·낙관 2% (오픈 연도 4%)'],
+  ['수선·보험·POS 등','other',null,'순매출의 2%'],
+  ['4-wall EBITDA','ebitda',null,'매장 단위 이익','sum'],
+  ['본사 관리비 배부','hq',null,'순매출의 3%'],
+  ['감가상각','dep',null,'초기 투자 1.82억 ÷ 5년'],
+  ['영업이익','op',null,'','sum'],
+  ['영업이익률',r=>null,s=>(P.R[s].op/P.R[s].net*100).toFixed(1)+'%','','sum']];
+ document.querySelector('#pnltbl tbody').innerHTML=L.map(l=>`<tr class="${l[4]||''}"><td class="nw">${l[0]}</td>${sc.map(s=>{const v=typeof l[1]==='string'?P.R[s][l[1]]:null;const neg=typeof l[1]==='string'&&['cogs','pack','labor','rent','mgmt','card','util','mkt','other','hq','dep'].includes(l[1]);return `<td class="r num ${v!=null&&v<0?'down':''}">${v!=null?(neg?'−':'')+man(Math.abs(v)):l[2](s)}</td>`}).join('')}<td class="small muted">${l[3]}</td></tr>`).join('');
+ const g=P.grid,rents=[55000,65000,72900,85000,95000],tx=[110,130,158,180,201];
+ const col=v=>v<0?`color-mix(in srgb,var(--bad) ${Math.min(55,10+Math.abs(v)*2)}%,transparent)`:`color-mix(in srgb,var(--accent) ${Math.min(55,8+v*2.4)}%,transparent)`;
+ document.getElementById('heat').innerHTML=`<thead><tr><th>거래/일 \\ 임대료</th>${rents.map(r=>`<th class="r">${(r/1e4).toFixed(2)}만</th>`).join('')}</tr></thead><tbody>${tx.map((t,i)=>`<tr><th>${t}건</th>${g[i].map(v=>`<td style="background:${col(v)}">${v>0?'+':''}${v}</td>`).join('')}</tr>`).join('')}</tbody>`;
+})();
+function drawYrs(){
+ const svg=document.getElementById('yrs');svg.innerHTML='';const W=520,H=240,L=46,R=16,T=24,B=34;
+ const ys=Object.entries(P.yrs),max=8e8,min=-1e8,y=v=>T+(max-v)/(max-min)*(H-T-B),gw=(W-L-R)/3;
+ [-1e8,0,2e8,4e8,6e8,8e8].forEach(v=>{mk('line',{x1:L,x2:W-R,y1:y(v),y2:y(v),stroke:v===0?css('--line-2'):css('--line'),'stroke-width':v===0?1.4:1},svg);txt(svg,L-6,y(v)+4,(v/1e8)+'억',{'text-anchor':'end','font-size':10.5,fill:css('--ink-3'),'font-family':'IBM Plex Mono, monospace'})});
+ ys.forEach(([yr,r],i)=>{const cx=L+gw*i+gw/2;mk('rect',{x:cx-34,y:y(r.net),width:30,height:y(0)-y(r.net),rx:3,fill:css('--steel'),'fill-opacity':.55},svg);
+  const op=r.op;mk('rect',{x:cx+4,y:op>=0?y(op):y(0),width:30,height:Math.abs(y(op)-y(0)),rx:3,fill:op>=0?css('--accent'):css('--bad')},svg);
+  txt(svg,cx-19,y(r.net)-6,(r.net/1e8).toFixed(1),{'text-anchor':'middle','font-size':11,fill:css('--ink-2'),'font-family':'IBM Plex Mono, monospace'});
+  txt(svg,cx+19,(op>=0?y(op)-6:y(op)+14),(op/1e8).toFixed(2),{'text-anchor':'middle','font-size':11,fill:op>=0?css('--accent'):css('--bad'),'font-family':'IBM Plex Mono, monospace','font-weight':500});
+  txt(svg,cx,H-12,yr,{'text-anchor':'middle','font-size':12,fill:css('--ink-2'),'font-family':'IBM Plex Mono, monospace'})});
+ txt(svg,W-R,14,'■ 순매출  ■ 영업이익 (억 원)',{'text-anchor':'end','font-size':11,fill:css('--ink-3')});
+ const cum=ys.reduce((a,[,r])=>a+r.op,0);txt(svg,L,14,'3년 누적 영업이익 '+(cum/1e8).toFixed(2)+'억',{'font-size':11.5,fill:css('--ink'),'font-weight':600});
+}
+/* simulator */
+const BASE={txn:158,tk:9900,rent:72900,hrs:154,b2b:4};
+const ids=['txn','tk','rent','hrs','b2b'];
+function setBase(){ids.forEach(k=>document.getElementById('s-'+k).value=BASE[k]);sim()}
+function sim(){
+ const v={};ids.forEach(k=>v[k]=+document.getElementById('s-'+k).value);
+ document.getElementById('o-txn').textContent=v.txn+'건';document.getElementById('o-tk').textContent=v.tk.toLocaleString()+'원';document.getElementById('o-rent').textContent=v.rent.toLocaleString()+'원';document.getElementById('o-hrs').textContent=v.hrs+'시간';document.getElementById('o-b2b').textContent=v.b2b+'%';
+ const r=calc({txn:v.txn,tk:v.tk,rent:v.rent,hrs:v.hrs,b2b:v.b2b/100});
+ const op=document.getElementById('r-op');op.textContent=eok(r.op);op.style.color=r.op>=0?css('--accent'):css('--bad');
+ document.getElementById('r-opm').textContent=`영업이익률 ${(r.op/r.net*100).toFixed(1)}% · 4-wall EBITDA ${eok(r.ebitda)} (${(r.ebitda/r.net*100).toFixed(1)}%)`;
+ const rows=[['순매출',r.net],['식자재·포장',-(r.cogs+r.pack)],['인건비',-r.labor],['임차·관리비',-(r.rent+r.mgmt)],['기타 운영비',-(r.card+r.util+r.mkt+r.other)],['본사배부·감가상각',-(r.hq+r.dep)],['영업이익',r.op]];
+ document.getElementById('simtbl').innerHTML='<tbody>'+rows.map((x,i)=>`<tr class="${i===0||i===rows.length-1?'sum':''}"><td>${x[0]}</td><td class="r num ${x[1]<0&&i===rows.length-1?'down':''}">${man(x[1])}만</td><td class="r num xs">${(x[1]/r.net*100).toFixed(1)}%</td></tr>`).join('')+'</tbody>';
+ let lo=10,hi=500;for(let i=0;i<50;i++){const m=(lo+hi)/2;calc({txn:m,tk:v.tk,rent:v.rent,hrs:v.hrs,b2b:v.b2b/100}).op>0?hi=m:lo=m}
+ document.getElementById('r-be').textContent=`이 조건의 손익분기: 하루 ${Math.round(hi)}건 (권역 평균 158건 대비 ${Math.round(hi/158*100)}%)`;
+}
+ids.forEach(k=>document.getElementById('s-'+k).addEventListener('input',sim));document.getElementById('reset').addEventListener('click',setBase);
+function render(){drawAfford();drawCfbk();drawPlan();drawTicket();drawYrs();sim()}
+ids.forEach(k=>document.getElementById('s-'+k).value=BASE[k]);render();
+try{matchMedia('(prefers-color-scheme: dark)').addEventListener('change',render)}catch(e){}
+new MutationObserver(render).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+</script>

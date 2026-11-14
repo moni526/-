@@ -1,0 +1,6 @@
+analysis/raw/
+venv/
+tmp/
+__pycache__/
+*.pyc
+.DS_Store
